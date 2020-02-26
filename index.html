@@ -1,43 +1,29 @@
 
 
 <style>
-* {
-  box-sizing: border-box;
-}	
 	
-	/* Float four columns side by side */
-.column {
+	
+	div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 180px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
-  background-color: #f1f1f1;
 }
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+	
 	
 	
 	
@@ -136,28 +122,19 @@ word-break: break-all;
   <br/>
 <br/>
 
+	<div class="gallery">
+  <a target="_blank" href="bonkio.html">
+    <img src="bonk.png" alt="bonk" width="150" height="4150">
+  </a>
+  <div class="desc">Bonk.io</div>
+</div>
+	
 <center>
 <h2>Game List:</h2>
 </center>
 
 <div class="test">
 
-<div class="row">
-  <div class="column">
-    <div class="card"><a href="bonkio.html" target="_blank">
-<img src="bonk.png" alt="bonk" width="150" height="150" class="border">
-</a></div>
-  </div>
-  <div class="column">
-    <div class="card">..</div>
-  </div>
-  <div class="column">
-    <div class="card">..</div>
-  </div>
-  <div class="column">
-    <div class="card">..</div>
-  </div>
-</div>
 <center>
 
 	
