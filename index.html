@@ -1,11 +1,89 @@
-
-
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.dropdown-content a:hover {background-color: red;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #c90000;
+}
+
+body {
+   margin: 0px;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 h1{
     margin:0;
     padding:0;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 45px;
+font-size: 59px;
  color: white;
 text-shadow: 2px 2px #000000;
 
@@ -15,154 +93,76 @@ h2{
     margin:0;
     padding:0;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 35px;
+font-size: 40px;
  color: white;
 text-shadow: 2px 2px #000000;
 
 }
 
-  h4{
+h4{
     margin:0;
     padding:0;
-color: white;
 font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+ color: white;
 text-shadow: 2px 2px #000000;
+
 }
-  p{
+
+p{
     margin:0;
     padding:0;
-}
-  ul{
-    margin:0;
-    padding:0;
-}
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+ color: white;
+text-shadow: 2px 2px #000000;
 
-.border { border-width: 3px; border-color: white; border-style: solid; }
-
-
-
-
-
-
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-div{
-text-overflow: clip;
-word-break: break-all;
-}
-
-
-
-
-
-a:link, a:visited {
-  background-color: #000000;
-  color: white;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-font-size: 35px;
-}
-
-a:hover, a:active {
-  background-color: white;
-}
 
 </style>
 
 
-
-
-
-
-<body>
 <link rel="icon" 
       type="image/png" 
       href="favicon.png">
 <title>nGames</title>
+
+
+<ul>
+  <li class="active"><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Games</a>
+    <div class="dropdown-content">
+      <a class="new" href="bloons5.html">Bloons 5</a>
+      <a href="bonkio.html">Bonk.io</a>
+      <a href="mc.html">Minecraft Remake</a>
+      <a href="dcr.html">Dream Car Racing</a>
+      <a href="computerbasher.html">Computer Smasher</a>
+      <a href="duck.html">Duck Life 4</a>
+      <a href="blox.html">Bloxorz</a>
+      <a href="earntodie.html">Earn to Die</a>
+      <a href="happywheels.html">Happy Wheels</a>
+      <a href="freeze.html">Papa's Freezeria</a>
+      <a href="tetris.html">Tetris</a>
+      <a href="linerider.html">Line Rider</a>
+      <a href="hard.html">World's Hardest Game</a>
+      <a href="run2.html">Run 2</a>
+
+    </div>
+  </li>
+</ul>
+
+<br>
 <center>
 <h1>nGames</h1>
 <h4>NH 2020</h4>
 </center>
 
-<center>
-<a href="test.html" target="_blank">
-Test out the new layout!
-</a>
-</center>
 
 
-  <br/>
-<br/>
-
-<center>
-<h2>Game List:</h2>
-<h4>THESE ARE NOT ADS</h4>
-</center>
-
-<div class="test">
-
-
-<center>
-
-<a href="bonkio.html" target="_blank">
-<img src="bonk.png" alt="bonk" width="150" height="150" class="border">
-</a>
-
-<a href="happywheels.html">
-<img src="happy.jpg" alt="happy wheels" width="150" height="150" class="border">
-</a>
-<a href="duck.html">
-<img src="duck.jpg" alt="duck life 4" width="150" height="150" class="border">
-</a>
-<a href="earntodie.html">
-<img src="die.png" alt="earntodie" width="150" height="150" class="border">
-</a>
-<a href="bloons5.html">
-<img src="bloons5.png" alt="line rider" width="150" height="150" class="border">
-</a>
-<a href="run2.html">
-<img src="run2.png" alt="line rider" width="150" height="150" class="border">
-</a>
-<a href="freeze.html">
-<img src="freeze.png" alt="line rider" width="150" height="150" class="border">
-</a>
-
-<a href="computerbasher.html">
-<img src="comp.png" alt="computer smasher" width="150" height="150" class="border">
-</a>
-<a href="linerider.html">
-<img src="line.png" alt="line rider" width="150" height="150" class="border">
-</a>
-<a href="tetris.html">
-<img src="tetris.png" alt="line rider" width="150" height="150" class="border">
-</a>
-<a href="hard.html">
-<img src="hard.png" alt="world's hardest game" width="150" height="150" class="border">
-</a>
-
-</center>
-<br/>
-<br/>
-
+<br>
+<br>
 <center>
 <h2>How to Fix "Flash Is Blocked" Error</h2>
 <a href="https://www.youtube.com/watch?v=nrzcIr_3yeQ">
@@ -170,14 +170,10 @@ Test out the new layout!
 </a>
 </center>
 
+
 <br/>
 <br/>
 
 <center>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvOJ28UzP0byttSWfdBE0ixxhPHH2U-1z3NcykJt-2ihhUUg/viewform?embedded=true" width="640" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </center>
-
-
-</div>
-
-</body>
