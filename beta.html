@@ -24,7 +24,6 @@ li a, .dropbtn {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 font-size: 17px;
-
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -64,39 +63,26 @@ font-size: 17px;
 
 .active {
   background-color: #4f4f4f;
-
-}
-.ac{
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
 }
 
 body {
   margin: 0px;
-  background: #1d1f20;
+  background: linear-gradient(-45deg, #8a442f, #91264f, #166480, #168067);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-.header {
- 
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
-
 
 h1{
     margin:0;
@@ -104,7 +90,7 @@ h1{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 59px;
  color: white;
-
+text-shadow: 2px 2px #000000;
 
 }
 
@@ -114,7 +100,7 @@ h2{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 40px;
  color: white;
-
+text-shadow: 2px 2px #000000;
 
 }
 
@@ -124,7 +110,7 @@ h4{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 22px;
  color: white;
-
+text-shadow: 2px 2px #000000;
 
 }
 
@@ -134,22 +120,24 @@ p{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
  color: white;
-
+text-shadow: 2px 2px #000000;
 
 }
 
 
 </style>
 
-
+<head>
 <link rel="icon" 
       type="image/png" 
       href="favicon.png">
 <title>nGames</title>
+</head>
 
 
 <ul>
-  <li class="active"><a class="ac" href="index.html">Home</a></li>
+  <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="run3.html">Run 3</a></li>
   <li><a href="bonkio.html">Bonk</a></li>
   <li><a href="dcr.html">Dream Car Racing</a></li>
   <li><a href="mc.html">Minecraft Remake</a></li>
@@ -185,16 +173,16 @@ font-size: 20px;
 
 
   </li>
+  <li style="float:right"><a href="https://forms.gle/jnwKFy3fWNGWZok16">Bug Report</a></li>
   <li style="float:right"><a href="https://forms.gle/ra52LJPn98ojVkdq7">Game Request</a></li>
 </ul>
-</ul>
 
 <br>
 <center>
-  <h1 class="header">nGames</h1>
-<h4 class="header">NH 2020</h4>
+<h1>nGames</h1>
+<h4>NH 2020</h4>
 <br>
-<p class="header">RECENTLY ADDED: Basketball Legends</p>
+<p>DAILY GAME: Run 3</p>
 </center>
 
 
@@ -202,7 +190,7 @@ font-size: 20px;
 <br>
 <br>
 <center>
-<h2 class="header"><a href="https://www.youtube.com/watch?v=nrzcIr_3yeQ"><u>(Link) How to Fix "Flash Is Blocked" Error</h2></u></a>
+<h2><a href="https://www.youtube.com/watch?v=nrzcIr_3yeQ"><u>How to Fix "Flash Is Blocked" Error</h2></u></a>
 
 </center>
 
@@ -210,11 +198,8 @@ font-size: 20px;
 <br/>
 <br/>
 <center>
-<p class="header">If the games become unresponsive, you must log out of your Chromebook and log back in. I don't know why this happens or why this fix works, but it does.</p>
+<p>If the games become unresponsive, you must log out of your Chromebook and log back in. I don't know why this happens or why this fix works, but it does.</p>
 </center>
 <br>
 <br>
 
-<center>
-  <
-</center>
