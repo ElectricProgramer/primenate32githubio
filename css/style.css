@@ -30,7 +30,6 @@ ul {
 li {
     left:50px;
     top:20px;
-    color: #fff;
   background-color: rgba(51,51,51,0.8);
     display: block;
     float: left;
@@ -42,17 +41,18 @@ li {
   
 li a {
   color: #fff;
+    display:        flex;
+  flex-grow:      1;
+  flex-shrink:    1;
+  
 }
 
-li:hover,
-li:focus-within {
+li:hover {
     background: red;
     cursor: pointer;
 }
 
-li:focus-within a {
-  outline: none;
-}
+
 
 ul li ul {
     background-color:rgba(51,51,51,0.8)
