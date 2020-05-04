@@ -72,11 +72,11 @@
 
     <body>
 		<div class="bg_img"><img src="images/1.jpg" alt="background" /></div>
-		<h1>Duke Fashion<span>Overlay Effect Menu with jQuery</span></h1>
+		<h1>Dueehion<span>Overlay Effect Menu with jQuery</span></h1>
 		<h2>Welcome to the world of fashion</h2>
 
 		<div class="oe_wrapper">
-			<div id="oe_overlay" class="oe_overlay"></div>
+			
 			<ul id="oe_menu" class="oe_menu">
 				<li><a href="">Collections</a>
 					<div>
@@ -215,7 +215,7 @@
             $(function() {
 				var $oe_menu		= $('#oe_menu');
 				var $oe_menu_items	= $oe_menu.children('li');
-				var $oe_overlay		= $('#oe_overlay');
+				
 
                 $oe_menu_items.bind('mouseenter',function(){
 					var $this = $(this);
@@ -231,12 +231,12 @@
 
 				$oe_menu.bind('mouseenter',function(){
 					var $this = $(this);
-					$oe_overlay.stop(true,true).fadeTo(200, 0.6);
+					
 					$this.addClass('hovered');
 				}).bind('mouseleave',function(){
 					var $this = $(this);
 					$this.removeClass('hovered');
-					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					
 					$oe_menu_items.children('div').hide();
 				})
             });
