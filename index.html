@@ -194,12 +194,12 @@ position:fixed;
 
 				$oe_menu.bind('mouseenter',function(){
 					var $this = $(this);
-					$oe_overlay.stop(true,true).fadeTo(200, 0.6);
+					
 					$this.addClass('hovered');
 				}).bind('mouseleave',function(){
 					var $this = $(this);
 					$this.removeClass('hovered');
-					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					
 					$oe_menu_items.children('div').hide();
 				})
             });
