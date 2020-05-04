@@ -7,7 +7,7 @@
 
     <body>
         <h1>nGames<span>2020 PrimeNate32</span></h1>
-		<h2 style="text-shadow: 2px 2px #000000;">Welcome to the world of flash games</h2>
+		<h2 style="text-shadow: 2px 2px #000000;"><div id="clock">Loading Time...</div></h2>
         <ul>
     <li style="border-radius:10px; margin-right:5px;"><a href="#" aria-haspopup="true">Games</a>
       <ul class="dropdown" aria-label="submenu">
@@ -98,5 +98,42 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+    
+    <script>
+    setInterval(function (){
+	var currentTime = new Date();
+	var hours = currentTime.getHours();
+	var minutes = currentTime.getMinutes();
+	var seconds = currentTime.getSeconds();
+	var period = "AM";
+
+	if (hours >= 12){
+		period = "PM";
+	}
+
+	if ( hours > 12){
+		hours = hours - 12;
+	}
+
+	if (minutes < 10){
+		minutes = "0" + minutes;
+	}
+
+	if (seconds < 10){
+		seconds = "0" + seconds;
+	}
+
+	var clockTime = hours + ":" + minutes + ":" + seconds + " " + period;
+	var clock = document.getElementById('clock');
+
+	clock.innerText = clockTime;
+
+}, 1000);
+        
+        
+    </script>
+   
+   
+   
     
 </html>
