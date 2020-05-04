@@ -199,7 +199,10 @@ $this.addClass(‘hovered’);
 }).bind(‘mouseleave’,function(){
 var $this = $(this);
 $this.removeClass(‘hovered’);
-$oe_overla
+$oe_overlay.stop(true,true).fadeTo(500, 0).hide();
+$oe_menu_items.children(‘div’).hide();
+})
+});
         </script>
         <center>
             <div class="pp"><h3>Important Notice:</h3><br>On December 31st, 2020, Google Chrome will lose support for Adobe Flash Player. I am working on getting some newer games that do not require flash. Bonk 2 and Krunker will remain to work after this deadline, but many games on this site will be removed, as they will no longer work.<br><h3 id="demo">loading countdown...</h3></div>
