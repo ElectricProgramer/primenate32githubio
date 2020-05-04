@@ -95,7 +95,7 @@ position:fixed;
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
-				<li><a href="#">Games</a>
+				<li><a>Games</a>
 					<div>
 						<ul>
 							
@@ -176,33 +176,33 @@ position:fixed;
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
         <script type="text/javascript">
             $(function() {
-var $oe_menu = $(‘#oe_menu’);
-var $oe_menu_items = $oe_menu.children(‘li’);
-var $oe_overlay = $(‘#oe_overlay’);
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				
 
-$oe_menu_items.bind(‘mouseenter’,function(){
-var $this = $(this);
-$this.addClass(‘slided selected’);
-$this.children(‘div’).css(‘z-index’,’9999′).stop(true,true).slideDown(200,function(){
-$oe_menu_items.not(‘.slided’).children(‘div’).hide();
-$this.removeClass(‘slided’);
-});
-}).bind(‘mouseleave’,function(){
-var $this = $(this);
-$this.removeClass(‘selected’).children(‘div’).css(‘z-index’,’1′);
-});
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
 
-$oe_menu.bind(‘mouseenter’,function(){
-var $this = $(this);
-$oe_overlay.stop(true,true).fadeTo(500, 0.6).show();
-$this.addClass(‘hovered’);
-}).bind(‘mouseleave’,function(){
-var $this = $(this);
-$this.removeClass(‘hovered’);
-$oe_overlay.stop(true,true).fadeTo(500, 0).hide();
-$oe_menu_items.children(‘div’).hide();
-})
-});
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+					$oe_overlay.stop(true,true).fadeTo(200, 0.6);
+					$this.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('hovered');
+					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					$oe_menu_items.children('div').hide();
+				})
+            });
         </script>
         <center>
             <div class="pp"><h3>Important Notice:</h3><br>On December 31st, 2020, Google Chrome will lose support for Adobe Flash Player. I am working on getting some newer games that do not require flash. Bonk 2 and Krunker will remain to work after this deadline, but many games on this site will be removed, as they will no longer work.<br><h3 id="demo">loading countdown...</h3></div>
