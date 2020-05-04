@@ -1,362 +1,241 @@
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  
-    background: rgba(54, 54, 54, 0.7);
-    
-}
-
-a{
-  color: white;
-  
-}
-
-li {
-  float: left;
-}
-
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 8px 15px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-font-size: 15px;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #5c5c5c;
-    
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #363636;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-    background: rgba(54, 54, 54, 0.7);
-}
-
-.dropdown-content a {
-  font-family: Arial, Helvetica, sans-serif;
-font-size: 15px;
-  color: white;
-  padding: 8px 15px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-
-
-.dropdown-content a:hover {background-color: #5c5c5c}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.active {
-  background-color: #4f4f4f;
-}
-
-body {
-  margin: 0px;
-  background-image: url("back.jpg");
-
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-h1{
-    margin:0;
-    padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-font-size: 59px;
- color: white;
-text-shadow: 2px 2px #000000;
-
-}
-
-h2{
-    margin:0;
-    padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-
-font-size: 40px;
- color: white;
-text-shadow: 2px 2px #000000;
-
-}
-    
-    h3{
-    margin:0;
-    padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-
-font-size: 69px;
- color: white;
-text-shadow: 2px 2px #000000;
-
-}
-
-h4{
-    margin:0;
-    padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-
-font-size: 22px;
- color: white;
-text-shadow: 2px 2px #000000;
-
-}
-
-p{
-    margin:0;
-    padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-
-font-size: 20px;
- color: white;
-text-shadow: 2px 2px #000000;
-
-}
-
-    marquee{
-        background-color:#666666;
-        font-family: Arial, Helvetica, sans-serif;
-font-size: 18px;
-        padding:3px;
-        color:white;
-        text-shadow: 2px 2px #000000;
-        background: rgba(204, 204, 204, 0.5);
-    }
-
-    .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-        padding:10;
-  width: 100%;
-  background: rgba(54, 54, 54, 0.7);
-  color: white;
-  text-align: center;
-}
-    
-    
-    
-    
-    div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-        opacity:0.6;
-    }
-    
-    div.transbox p {
-        margin: 3%;
-    color:black;
-        text-shadow: 0px 0px #000000;
-    }
-    
-  .fade-in{
-    animation:fadeIn 1s;
-  }
-  
-  @keyframes fadeIn{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  }
-    
-</style>
-
-<head>
-
-  
-<link rel="icon" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>nGames</title>
+        <link rel="icon" 
       type="image/png" 
       href="favicon.png">
-<title>nGames</title>
-</head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="" />
+        <meta name="keywords" content=""/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/Aller.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('ul.oe_menu div a',{hover: true});
+			Cufon.replace('h1,h2,.oe_heading');
+		</script>
+        <style type="text/css">
+			span.reference{
+				position:fixed;
+				left:0px;
+				bottom:0px;
+				background:#000;
+				width:100%;
+				font-size:10px;
+				line-height:20px;
+				text-align:right;
+				height:20px;
+				-moz-box-shadow:-1px 0px 10px #000;
+				-webkit-box-shadow:-1px 0px 10px #000;
+				box-shadow:-1px 0px 10px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				margin-right:10px;4
+                
+				
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			.bg_img img{
+				width:100%;
+				position:fixed;
+				top:0px;
+				left:0px;
+				z-index:-1;
+			}
+			h1{
+				font-size:75px;
+				text-align:right;
+				position:absolute;
+				right:40px;
+				top:20px;
+				
+                text-shadow: 2px 2px #000000;
+				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
+                
+			*/}
+			h1 span{
+				display:block;
+				font-size:15px;
+				font-weight:bold;
+			}
+			h2{
+                text-shadow: 2px 2px #000000;
+				position:absolute;
+				top:145px;
+				left:50px;
+				font-size:40px;
+				font-weight:normal;
+				
+*/}
+            .pp {
+  background-color: rgba(51,51,51,0.8);
+position:fixed;
+  padding: 25px;
+                
+                bottom:450px;
+                left:25%;
+                right:25%;
+                
+}
+		</style>
+    </head>
 
+    <body>
+        
+		<div class="bg_img"><img src="back.jpg" alt="background" /></div>
+		<h1>nGames<span>2020 PrimeNate32</span></h1>
+		<h2 style="text-shadow: 2px 2px #000000;">Welcome to the world of flash games</h2>
 
-<ul class="fade-in">
-    <li class="active"><a href="index.html"><b>nGames</b></a></li>
-    <li><a href="run3.html">Run 3</a></li>
-   <li><a href="bonkio.html">Bonk</a></li>
-    <li><a href="smash.html">Smash Flash</a></li>
-  <li><a href="krunker.html">Krunker</a></li>
-  <li><a class="button" href="bonk2.html">Bonk 2</a></li>
-  <li><a href="dcr.html">Dream Car Racing</a></li>
-  <li><a href="happywheels.html">Happy Wheels</a></li>
-  <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn"><b><i>More Games...</i></b></a>
-    <div class="dropdown-content">
-      <a href="legend.html">Basketball Legends</a>
-      <a class="new" href="bloons5.html">Bloons 5</a>
-      <a href="flight.html">Flight</a>
-        <a href="mc.html">Minecraft Remake</a>
-        <a href="dino.html">Chrome Dino</a>
-      <a href="computerbasher.html">Computer Smasher</a>
-      <a href="duck.html">Duck Life 4</a>
-      <a href="blox.html">Bloxorz</a>
-      <a href="earntodie.html">Earn to Die</a>
-      <a href="freeze.html">Papa's Freezeria</a>
-      <a href="tetris.html">Tetris</a>
-      <a href="linerider.html">Line Rider</a>
-      <a href="hard.html">World's Hardest Game</a>
-      <a href="run2.html">Run 2</a>
+		<div class="oe_wrapper">
+			<div id="oe_overlay" class="oe_overlay"></div>
+			<ul id="oe_menu" class="oe_menu">
+				<li><a>Games</a>
+					<div>
+						<ul>
+							
+							<li><a href="./games/2048/2048.html">2048</a></li>
+                            <li><a href="./games/basketballlegends.html">Basketball Legends</a></li>
+							<li><a href="./games/bloonstd5.html">Bloons TD 5</a></li>
+							<li><a href="./games/bloxorz.html">Bloxorz</a></li>
+							<li><a href="./games/bonk.html">Bonk</a></li>
+							<li><a href="./games/bonk2.html">Bonk 2</a></li>
+                            <li><a href="./games/dino.html">Dino Game</a></li>
+							<li><a href="./games/dreamcarracing.html">Dream Car Racing</a></li>
+							<li><a href="./games/ducklife4.html">Duck Life 4</a></li>
+						</ul>
+						<ul>
+                            <li><a href="./games/earntodie.html">Earn to Die</a></li>
+							<li><a href="./games/flight.html">Flight</a></li>
+							<li><a href="./games/happywheels.html">Happy Wheels</a></li>
+							<li><a href="./games/krunker.html">Krunker</a></li>
+							<li><a href="./games/linerider.html">Line Rider</a></li>
+							<li><a href="./games/minecraft.html">Minecraft Remake</a></li>
+							<li><a href="./games/papasfreezeria.html">Papa's Freezeria</a></li>
+							<li><a href="./games/run2.html">Run 2</a></li>
+                            <li><a href="./games/run3.html">Run 3</a></li>
+							
+							
+						</ul>
+						<ul>
+                            <li><a href="./games/supersmashflash.html">Super Smash Flash</a></li>
+                            <li><a href="./games/tetris.html">Tetris</a></li>
+							<li><a href="./games/worldshardestgame.html">World's Hardest Game</a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li><a>Educational Resources</a>
+					<div style="left:-111px;"><!-- -112px -->
+						<ul class="oe_full">
+							<li class="oe_heading">Spanish</li>
+							<li><a href="https://quizlet.com/class/13378530/">Spanish I Quizlet</a></li>
+							<li><a href="https://docs.google.com/document/d/1zlzctLLKCwfj4ZFrACFFROhHOGNYOd_Gkh36zCgTaSs/edit?usp=sharing">Verb List</a></li>
+							<li><a href="./tools/easyaccents.html">Easy Accents</a></li>
+							
+						</ul>
+						
+					</div>
+				</li>
+				<li><a>Site Info</a>
+					<div style="left:-223px;">
+						<ul>
+							<li class="oe_heading">Feedback</li>
+							<li><a href="https://forms.gle/jnwKFy3fWNGWZok16" target="_blank">Report a Bug</a></li>
+							<li><a href="https://forms.gle/ra52LJPn98ojVkdq7" target="_blank">Game Request</a></li>
+						</ul>
+                        
+                        <ul>
+							<li class="oe_heading">Source</li>
+							<li><a href="https://github.com/primenate32/primenate32.github.io" target="_blank">Full Site Source code on GitHub</a></li>
+							<li><a href="http://tympanus.net/codrops/2010/11/25/overlay-effect-menu/" target="_blank">Navbar design</a></li>
+							<li><a href="https://imgur.com/gallery/rUfE2#TNEJezP" target="_blank">Background</a></li>
+						</ul>
+					</div>
+				</li>
+				
+					
+			</ul>	
+            
+		</div>
+        
+        <div>
+            <span class="reference">
+                <a href="http://tympanus.net/codrops/2010/11/25/overlay-effect-menu/" target="_blank">Menu code from Codrops</a>
+				<a href="https://imgur.com/gallery/rUfE2#TNEJezP" target="_blank">Background image by jakkuht</a>
+                <a href="https://github.com/primenate32/primenate32.github.io" target="_blank">Site source code by Nathaniel Hofer</a>
+            </span>
+		</div>
 
-      
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				var $oe_overlay		= $('#oe_overlay');
 
-    </div>
-      
-      </li>
-  <li style="float:right"><a href="https://forms.gle/jnwKFy3fWNGWZok16">Bug Report</a></li>
-  <li style="float:right"><a href="https://forms.gle/ra52LJPn98ojVkdq7">Game Request</a></li>
-      
-    <li style="float:right" class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"><i>Spanish I...</i></a>
-    <div class="dropdown-content">
-      <a href="https://quizlet.com/class/13378530/">Spanish Quizlet</a>
-      <a href="easyaccents.html">Easy Accents</a>
-      <a href="https://docs.google.com/document/d/1zlzctLLKCwfj4ZFrACFFROhHOGNYOd_Gkh36zCgTaSs/edit?usp=sharing">Verb List</a>
-      
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
 
-    </div>
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+					$oe_overlay.stop(true,true).fadeTo(200, 0.6);
+					$this.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('hovered');
+					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					$oe_menu_items.children('div').hide();
+				})
+            });
+        </script>
+        <center>
+            <div class="pp"><h3>Important Notice:</h3><br>On December 31st, 2020, Google Chrome will lose support for Adobe Flash Player. I am working on getting some newer games that do not require flash. Bonk 2 and Krunker will remain to work after this deadline, but many games on this site will be removed, as they will no longer work.<br><h3 id="demo">loading countdown...</h3></div>
+            </center>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 31, 2020 00:00:01").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-
- 
-</ul>
-
-<br>
-
-<center>
+  // Get today's date and time
+  var now = new Date().getTime();
     
-<h1>nGames</h1>
-
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
     
-
-</center>
-
-
-
-
-<br>
-<!-- 
-<div class="transbox">
-    <center>
-    <p></p>
-    </center>
-  </div>
--->
-<center>
-<h2><a href="https://www.youtube.com/watch?v=nrzcIr_3yeQ"><u>How to Fix "Flash Is Blocked" Error</h2></u></a>
-
-</center>
-
-
-<br/>
-<br/>
-<center>
-<p>For now, Bonk and Krunker are working again, but they may not keep working. I have also added Bonk 2</p>
-<br>
-<br>
-
-
-<style> 
-      body {
-      margin: 0;
-      }
-      .wrapper {
-      display: flex;
-      height: 20vh;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      }
-      .button {
-      border: 1px transparent;
-
-      -webkit-border-radius: 0px;
-      border-radius: 0px;
-      color: #eeeeee;
-      cursor: pointer;
-      display: inline-block;
-font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      padding: 8px 20px;
-      text-align: center;
-      text-decoration: none;
-      margin-left: 0px;
-      -webkit-animation: glowing 1300ms infinite;
-      -moz-animation: glowing 1300ms infinite;
-      -o-animation: glowing 1300ms infinite;
-      animation: glowing 1300ms infinite;
-      }
-      @-webkit-keyframes glowing {
-      0% { background-color: #0091b2; -webkit-box-shadow: 0 0 3px #0091b2; }
-      50% { background-color: #21c7ed; -webkit-box-shadow: 0 0 15px #21c7ed; }
-      100% { background-color: #0091b2; -webkit-box-shadow: 0 0 3px #0091b2; }
-      }
-      @keyframes glowing {
-      0% { background-color: #0091b2; box-shadow: 0 0 3px #0091b2; }
-      50% { background-color: #21c7ed; box-shadow: 0 0 15px #21c7ed; }
-      100% { background-color: #0091b2; box-shadow: 0 0 3px #0091b2; }
-      }
-      .svg-btn {
-      display: block;
-      width: 230px;
-      height: 230px;
-      margin-left: 10px;
-      }
-      svg {
-      fill: blue;
-      -webkit-animation: glowing-polygon 1300ms infinite;
-      -moz-animation: glowing-polygon 1300ms infinite;
-      -o-animation: glowing-polygon 1300ms infinite;
-      animation: glowing-polygon 1300ms infinite;
-      }
-      @-webkit-keyframes glowing-polygon {
-      0% { fill: #0091b2; -webkit-filter: drop-shadow( 0 0 3px #0091b2); }
-      50% { fill: #21c7ed; -webkit-filter: drop-shadow( 0 0 15px #21c7ed); }
-      100% { fill: #0091b2; -webkit-filter: drop-shadow( 0 0 3px #0091b2); }
-      }
-      @keyframes glowingPolygon  {
-      0% { fill: #0091b2; filter: drop-shadow( 0 0 3px #0091b2); }
-      50% { fill: #21c7ed; filter: drop-shadow( 0 0 15px #21c7ed); }
-      100% { fill: #0091b2; filter: drop-shadow( 0 0 3px #0091b2); }
-      }
-    </style>
-
-  
-
-<center><div class="footer">
-  <p>© 2020 Nathaniel Hofer - <a href="https://github.com/primenate32/primenate32.github.io">Source</a></p>
-</div></center>
-
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = "Countdown to Flash shutdown: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </body>
+</html>
