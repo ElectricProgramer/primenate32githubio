@@ -5,16 +5,10 @@
         <link rel="icon" 
       type="image/png" 
       href="favicon.png">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="" />
-        <meta name="keywords" content=""/>
+        
         <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen"/>
-		<script src="js/cufon-yui.js" type="text/javascript"></script>
-		<script src="js/Aller.font.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			Cufon.replace('ul.oe_menu div a',{hover: true});
-			Cufon.replace('h1,h2,.oe_heading');
-		</script>
+
+		
         <style type="text/css">
 			span.reference{
 				position:fixed;
@@ -161,41 +155,10 @@ position:fixed;
                
 				<a href="https://imgur.com/gallery/rUfE2#TNEJezP" target="_blank">Background image by jakkuht</a>
                 <a href="https://github.com/primenate32/primenate32.github.io" target="_blank">Site source code by Nathaniel Hofer</a>
-            </span>
+                </span>
 		</div>
 
-        <!-- The JavaScript -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-				var $oe_menu		= $('#oe_menu');
-				var $oe_menu_items	= $oe_menu.children('li');
-				
-
-                $oe_menu_items.bind('mouseenter',function(){
-					var $this = $(this);
-					$this.addClass('slided selected');
-					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
-						$oe_menu_items.not('.slided').children('div').hide();
-						$this.removeClass('slided');
-					});
-				}).bind('mouseleave',function(){
-					var $this = $(this);
-					$this.removeClass('selected').children('div').css('z-index','1');
-				});
-
-				$oe_menu.bind('mouseenter',function(){
-					var $this = $(this);
-					
-					$this.addClass('hovered');
-				}).bind('mouseleave',function(){
-					var $this = $(this);
-					$this.removeClass('hovered');
-					
-					$oe_menu_items.children('div').hide();
-				})
-            });
-        </script>
+        
         <center>
             <div class="pp"><h3>Important Notice:</h3><br>On December 31st, 2020, Google Chrome will lose support for Adobe Flash Player. I am working on getting some newer games that do not require flash. Bonk 2 and Krunker will remain to work after this deadline, but many games on this site will be removed, as they will no longer work.<br><h3 id="demo">loading countdown...</h3></div>
             </center>
@@ -229,5 +192,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+   
     </body>
 </html>
