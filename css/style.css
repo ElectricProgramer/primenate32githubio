@@ -46,7 +46,7 @@ li a {
 }
 
 li:hover {
-    background: red;
+    background: #f05d08;
     cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ h2{
 }
 
 .btn-group .btn:hover {
-  background: red;
+  background: #f05d08;
     cursor: pointer;
     
 }
